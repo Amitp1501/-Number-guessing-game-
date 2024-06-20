@@ -45,12 +45,12 @@ body {
   outline: none;
 }
 .container h2 {
-    font-size: 30px;
-    text-align: center;
-    width: 60%;
-    background-color: #ff0000b0;
-    margin: 25px auto 30px;
-    border-radius: 50px;
+  font-size: 30px;
+  text-align: center;
+  width: 60%;
+  background-color: #ff0000b0;
+  margin: 25px auto 30px;
+  border-radius: 50px;
 }
 .Hide-num {
   text-align: center;
@@ -67,25 +67,54 @@ body {
   margin: 1rem 0;
 }
 
-.number_data{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: rem 0;
+.number_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: rem 0;
 }
 .number_data input {
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    padding: 13px 20px;
-    font-size: 0.75rem;
-    border: 1px solid #ddd;
-    width: 210px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 20px;
+  font-size: 0.75rem;
+  border: 1px solid #ddd;
+  width: 210px;
 }
-.number_data button{
+.number_data button {
+  display: block;
+  margin-top: 1rem;
+}
+.contant {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  .container h2 {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .Hide-num {
+    width: 80%;
+  }
+  .massage {
+    font-size: 1.55rem;
+  }
+  .number_data {
     display: block;
-    margin-top: 1rem;
-}
-.contant{
-    font-size: 1.2rem;
+    text-align: center;
+  }
+  button.btn.Btn_check {
+    width: 45%;
+    margin: 20px auto 15px;
+  }
+  .number_data input {
+    width: 65%;
+    font-size: 13px;
+  }
 }
